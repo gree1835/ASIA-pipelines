@@ -32,6 +32,7 @@ These were tested with Fiji, version ImageJ 2.0.0-rc691/1.52n, Java 1.8.0_172 (6
   3. To run "DeconExhaustive_toSingleFile.py" click run and specify input files, output folders, a single PSF file, and number of iterations (we used 10). A PSF file needs to be generated corresponding to exact microscope acquisition parameters used. We used the PSF Generator plugin found at http://bigwww.epfl.ch/algorithms/psfgenerator/.
   A single PSF file should be used that contains PSF images generated for both red and green channels merged into a single tif file. The order of the channels in the PSF file should match the order of the channels in the images to be deconvolved.
   4. To run "PunctaAnalysis.py" click run and specify the input files, output folder, and min and max puncta size. Debugging can be checked to see the image outputs and to test parameters before running a large batch. Two channels should be checked if the images do not contain brightfield or a third channel, such as images generated from the "DeconExhaustive_toSingleFile.py" script. 
+  - the number of puncta will be the nPunctae variable and the cell death marker will be the RMregions variable.
 
 ### CellProfiler
 
